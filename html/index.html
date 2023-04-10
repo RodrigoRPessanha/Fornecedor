@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Página Incial</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -12,20 +12,32 @@
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <nav></nav>
+    <nav>
+      <div id="burguer-menu-div">
+        <i id="burguer-menu" class="material-icons" onclick="burguerClicked()"
+          >close</i
+        >
+      </div>
+      <div id="startPage-div">
+        <a href="./index.html">
+          <img id="startPage" src="../imgs/cart.png" alt="Página Incial" />
+        </a>
+      </div>
+    </nav>
     <aside class="aside">
-      <i id="burguer-menu" class="material-icons" onclick="burguerClicked()"
-        >menu</i
-      >
       <menu id="menu">
         <ul>
-          <li class="itens"><a href="">Inserir Produtos</a></li>
-          <li class="itens"><a href="">Registrar Compras de Produtos</a></li>
-          <li class="itens"><a href="">Relatório Produtos</a></li>
+          <a href=""><li class="itens">Inserir Produtos</li></a>
+          <a href=""><li class="itens">Registrar Compras de Produtos</li></a>
+          <a href=""><li class="itens">Relatório Produtos</li></a>
         </ul>
       </menu>
     </aside>
-    <section></section>
+    <main id="main">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      aliquid animi voluptatem alias, doloremque blanditiis sed vitae. Sit, vel
+      officia.
+    </main>
     <script src="../js/script.js"></script>
   </body>
 </html>
