@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Incial</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="../../styles\Principal\style.css" />
+    <link rel="stylesheet" href="../../styles/RegistroDeProdutos/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="burguer-menu-div">
+        <i id="burguer-menu" class="material-icons" onclick="burguerClicked()"
+          >close</i
+        >
+      </div>
+      <div id="startPage-div">
+        <a href="../Principal/index.html">
+          <img id="startPage" src="../../imgs/cart.png" alt="Página Incial" />
+        </a>
+      </div>
+    </nav>
+    <aside class="aside">
+      <menu id="menu">
+        <ul>
+          <a href="./registroDeProdutos.html"
+            ><li class="itens">Inserir Produtos</li></a
+          >
+          <a href=""><li class="itens">Registrar Compras de Produtos</li></a>
+          <a href=""><li class="itens">Relatório dos Produtos</li></a>
+        </ul>
+      </menu>
+      <menu id="menu-icones">
+        <ul>
+          <a href="./registroDeProdutos.html"
+            ><li class="itens-icone">
+              <img
+                class="itens-icone-svg"
+                src="../../imgs/addItem.svg"
+                alt="Adicionar Produto"
+              /></li
+          ></a>
+          <a href=""
+            ><li class="itens-icone">
+              <img
+                class="itens-icone-svg"
+                src="../../imgs/registro.svg"
+                alt="Registrar Compras"
+              /></li
+          ></a>
+          <a href=""
+            ><li class="itens-icone">
+              <img
+                class="itens-icone-svg"
+                src="../../imgs/relatorio.svg"
+                alt="Relatório dos Produtos"
+              /></li
+          ></a>
+        </ul>
+      </menu>
+    </aside>
+    <main id="main">
+      <form class="tipsForm">
+        <section class="containers">
+          <section class="container-nomeProduto">
+            <p>
+              <input
+                type="text"
+                placeholder="Nome do Produto"
+                name="nomeProduto"
+                id="nomeProduto"
+                class="nomeProdutoFormInput"
+              />
+            </p>
+          </section>
+          <section class="container-quantidadeDeProdutos">
+            <p>
+              <input
+                type="number"
+                placeholder="Quantidade Comprada"
+                name="quantidadeDeProdutos"
+                id="quantidadeDeProdutos"
+                class="quantidadeFormInput"
+              />
+            </p>
+          </section>
+          <section class="container-preco">
+            <p>
+              <input
+                type="number"
+                placeholder="Preço Unitário"
+                name="preco"
+                id="preco"
+                class="precoFormInput"
+              />
+            </p>
+          </section>
+          <section class="container-fornecedor">
+            <p>
+              <input
+                type="text"
+                placeholder="Nome do Fornecedor"
+                name="fornecedor"
+                id="fornecedor"
+                class="fornecedorFormInput"
+              />
+            </p>
+          </section>
+        </section>
+        <button type="submit" class="formSubmit">Confirmar</button>
+      </form>
+    </main>
+    <script src="../../js/Principal/script.js"></script>
+    <script src="../../js/RegistroDeProdutos/script.js"></script>
+  </body>
+</html>

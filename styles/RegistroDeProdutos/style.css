@@ -1,0 +1,33 @@
+main {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  height: 90vh;
+}
+
+main .tipsForm {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 500px;
+  border: gray 5px solid;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.containers {
+  justify-content: space-between;
+}
+
+.formSubmit {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 30px auto;
+  border-radius: 5px;
+  width: 150px;
+  height: 30px;
+  font-size: 17px;
+}
