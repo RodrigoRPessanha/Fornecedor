@@ -1,6 +1,6 @@
 body {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-image: url("../imgs/cart.png");
   background-color: #272727;
   background-repeat: no-repeat;
@@ -9,21 +9,46 @@ body {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background-color: #363636;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #643cd2;
+  border: 3px solid #363636;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8c52ff;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #643cd2;
+}
+
 main {
-  width: 100vw;
-  height: 100vh;
+  width: auto;
+  height: 100%;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  height: 7vh;
+  height: 66px;
+  width: 100vw;
   background-color: #363636;
   position: relative;
 }
 
 nav img#startPage {
-  width: 7vh;
+  width: 75px;
+  height: auto;
   margin-right: 10px;
 }
 
@@ -33,10 +58,10 @@ nav i#burguer-menu {
   cursor: pointer;
   font-size: 2.25em;
   height: auto;
-  width: 18vw;
+  width: 38px;
   z-index: 1;
-  margin-left: 1vw;
-  margin-top: 2vh;
+  margin-left: 10.5px;
+  margin-top: 15px;
 }
 
 .aside {
@@ -45,25 +70,25 @@ nav i#burguer-menu {
   left: 0;
   top: 0;
   bottom: 0;
-  padding: 20px;
-  transition: width 0.5s ease;
+  padding: 65px 10px 0px 10px;
+  transition: width 0.3s ease;
   height: 100%;
-  padding-top: 7vh;
 }
 
 .aside ul {
   padding: 0;
   margin: 0;
+  border-top: black 2px solid;
 }
 .aside ul li.itens {
   color: white;
   font-weight: bold;
   display: flex;
   list-style-type: none;
-  flex-wrap: wrap;
   align-content: space-between;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  border-bottom: black 2px solid;
 }
 .aside ul li.itens:hover {
   background-color: rgba(70, 70, 70);
@@ -73,11 +98,27 @@ nav i#burguer-menu {
   color: white;
   text-decoration: none;
 }
+.aside ul li.itens-icone {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.aside ul li img.itens-icone-svg {
+  width: 40px;
+  height: 40px;
+  border-bottom: black 2px solid;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.aside ul li img.itens-icone-svg:hover {
+  background-color: rgba(70, 70, 70);
+}
 
 main {
   color: white;
   display: flex;
-  transition: margin 0.5s ease;
+  transition: margin 0.3s ease;
 }
 
 menu {
