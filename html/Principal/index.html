@@ -13,62 +13,68 @@
   </head>
 
   <body>
-    <nav>
-      <section id="burguer-menu-div">
-        <i id="burguer-menu" class="material-icons" onclick="burguerClicked()"
-          >close</i
-        >
-      </section>
-
-      <section id="startPage-div">
-        <a href="./index.html">
-          <img id="startPage" src="../../imgs/cart.png" alt="Página Incial" />
-        </a>
-      </section>
-    </nav>
-
-    <aside class="aside">
-      <menu id="menu">
-        <ul>
-          <a href="../RegistroDeProdutos/registroDeProdutos.html"
-            ><li class="itens">Inserir Produtos</li></a
+    <div class="container">
+      <nav>
+        <section id="burguer-menu-div">
+          <i id="burguer-menu" class="material-icons" onclick="burguerClicked()"
+            >close</i
           >
-          <a href=""><li class="itens">Registrar Compras de Produtos</li></a>
-          <a href=""><li class="itens">Relatório dos Produtos</li></a>
-        </ul>
-      </menu>
+        </section>
 
-      <menu id="menu-icones">
-        <ul>
-          <a href="../RegistroDeProdutos/registroDeProdutos.html"
-            ><li class="itens-icone">
-              <img
-                class="itens-icone-svg"
-                src="../../imgs/addItem.svg"
-                alt="Adicionar Produto"
-              /></li
-          ></a>
-          <a href=""
-            ><li class="itens-icone">
-              <img
-                class="itens-icone-svg"
-                src="../../imgs/registro.svg"
-                alt="Registrar Compras"
-              /></li
-          ></a>
-          <a href=""
-            ><li class="itens-icone">
-              <img
-                class="itens-icone-svg"
-                src="../../imgs/relatorio.png"
-                alt="Relatório dos Produtos"
-              /></li
-          ></a>
-        </ul>
-      </menu>
-    </aside>
+        <section id="startPage-div">
+          <a href="./index.html">
+            <img id="startPage" src="../../imgs/cart.png" alt="Página Incial" />
+          </a>
+        </section>
+      </nav>
+      <section class="content">
+        <sidebar class="sidebar">
+          <menu id="menu">
+            <ul>
+              <a href="../RegistroDeProdutos/registroDeProdutos.html"
+                ><li class="itens">Inserir Produtos</li></a
+              >
+              <a href=""
+                ><li class="itens">Registrar Compras de Produtos</li></a
+              >
+              <a href=""><li class="itens">Relatório dos Produtos</li></a>
+            </ul>
+          </menu>
 
-    <main id="main"></main>
+          <menu id="menu-icones">
+            <ul>
+              <a href="../RegistroDeProdutos/registroDeProdutos.html"
+                ><li class="itens-icone">
+                  <img
+                    class="itens-icone-svg"
+                    src="../../imgs/addItem.svg"
+                    alt="Adicionar Produto"
+                  /></li
+              ></a>
+              <a href=""
+                ><li class="itens-icone">
+                  <img
+                    class="itens-icone-svg"
+                    src="../../imgs/registro.svg"
+                    alt="Registrar Compras"
+                  /></li
+              ></a>
+              <a href=""
+                ><li class="itens-icone">
+                  <img
+                    class="itens-icone-svg"
+                    src="../../imgs/relatorio.png"
+                    alt="Relatório dos Produtos"
+                  /></li
+              ></a>
+            </ul>
+          </menu>
+        </sidebar>
+
+        <main id="main"></main>
+      </section>
+    </div>
+
     <script src="../../js/Principal/script.js"></script>
   </body>
 </html>

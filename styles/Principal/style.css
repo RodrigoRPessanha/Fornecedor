@@ -1,14 +1,125 @@
 body {
   width: 100vw;
-  height: 100%;
-  background-image: url("../imgs/cart.png");
-  background-color: #272727;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  height: 100vh;
   margin: 0;
 }
 
+.container {
+  flex: 1 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: #272727;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 15fr;
+  grid-template-areas:
+    "nav nav"
+    "content content";
+}
+nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "burguer cart";
+
+  background-color: #404040;
+}
+nav img#startPage {
+  width: 4.6875rem;
+  height: auto;
+  margin-right: 10px;
+}
+
+nav i#burguer-menu {
+  cursor: pointer;
+  font-size: 2.25em;
+  width: 4%;
+  height: 48%;
+  padding-left: 1.5%;
+  padding-top: 1.3%;
+}
+
+nav section#startPage-div {
+  grid-area: cart;
+  display: flex;
+  justify-content: flex-end;
+}
+nav section#burguer-menu-div {
+  grid-area: burguer;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1fr 30fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "sidebar main"
+    "sidebar main";
+  width: 100%;
+  height: auto;
+  transition: grid-template-columns 0.3s ease;
+}
+
+main {
+  grid-area: main;
+  color: white;
+}
+
+sidebar {
+  grid-area: sidebar;
+  background-color: #404040;
+  width: 100%;
+  height: 100%;
+}
+menu {
+  padding: 0;
+  height: 100%;
+  margin: 0;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+.sidebar ul li.itens {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  list-style-type: none;
+  align-content: space-between;
+  padding-top: 1.625rem;
+  padding-bottom: 1.625rem;
+  padding-left: 0.9375rem;
+  border-bottom: black 0.125rem solid;
+}
+.sidebar ul li.itens:hover {
+  background-color: #505050;
+}
+
+.sidebar ul li.itens a:visited {
+  color: white;
+  text-decoration: none;
+}
+.sidebar ul li.itens-icone {
+  display: flex;
+  list-style-type: none;
+  align-content: space-between;
+  border-bottom: black 2px solid;
+  justify-content: center;
+}
+.sidebar ul li img.itens-icone-svg {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+}
+.sidebar ul li img.itens-icone-svg:hover {
+  background-color: #505050;
+}
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -30,97 +141,4 @@ body {
 
 ::-webkit-scrollbar-button {
   background-color: #643cd2;
-}
-
-main {
-  width: auto;
-  height: 100%;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  height: 66px;
-  width: 100vw;
-  background-color: #363636;
-  position: relative;
-}
-
-nav img#startPage {
-  width: 75px;
-  height: auto;
-  margin-right: 10px;
-}
-
-nav i#burguer-menu {
-  display: flex;
-  position: absolute;
-  cursor: pointer;
-  font-size: 2.25em;
-  height: auto;
-  width: 38px;
-  z-index: 1;
-  margin-left: 10.5px;
-  margin-top: 15px;
-}
-
-.aside {
-  background-color: #363636;
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  padding: 65px 10px 0px 10px;
-  transition: width 0.3s ease;
-  height: 100%;
-}
-
-.aside ul {
-  padding: 0;
-  margin: 0;
-  border-top: black 2px solid;
-}
-.aside ul li.itens {
-  color: white;
-  font-weight: bold;
-  display: flex;
-  list-style-type: none;
-  align-content: space-between;
-  padding-top: 26px;
-  padding-bottom: 26px;
-  border-bottom: black 2px solid;
-}
-.aside ul li.itens:hover {
-  background-color: rgba(70, 70, 70);
-}
-
-.aside ul li.itens a:visited {
-  color: white;
-  text-decoration: none;
-}
-.aside ul li.itens-icone {
-  display: flex;
-  list-style-type: none;
-  flex-wrap: wrap;
-  align-content: space-between;
-}
-.aside ul li img.itens-icone-svg {
-  width: 40px;
-  height: 40px;
-  border-bottom: black 2px solid;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.aside ul li img.itens-icone-svg:hover {
-  background-color: rgba(70, 70, 70);
-}
-
-main {
-  color: white;
-  display: flex;
-  transition: margin 0.3s ease;
-}
-
-menu {
-  padding: 0;
 }
