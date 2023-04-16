@@ -38,6 +38,7 @@ main .tipsForm .container section {
   width: 150px;
   height: 30px;
   font-size: 17px;
+  cursor: pointer;
 }
 
 .h2-form {

@@ -9,11 +9,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="stylesheet" href="../../styles\Principal\style.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
-      href="../../styles/RegistroDeComprasProdutos/style.css"
     />
+    <link rel="stylesheet" href="../../styles\Principal\style.css" />
+    <link rel="stylesheet" href="../../styles/Relatorio/style.css" />
   </head>
   <body>
     <div class="container">
@@ -82,52 +83,44 @@
         </sidebar>
 
         <main id="main">
-          <form class="tipsForm">
-            <section class="container">
-              <h2 class="h2-form">INSERIR ITENS</h2>
-              <section class="container-nomeProduto">
-                <input
-                  type="text"
-                  placeholder="Nome do Produto"
-                  name="nomeProduto"
-                  id="nomeProduto"
-                  class="itens-input"
-                />
-              </section>
-              <section class="container-quantidadeDeProdutos">
-                <input
-                  type="number"
-                  placeholder="Quantidade Comprada"
-                  name="quantidadeDeProdutos"
-                  id="quantidadeDeProdutos"
-                  class="itens-input"
-                />
-              </section>
-              <section class="container-preco">
-                <input
-                  type="number"
-                  placeholder="Preço Unitário"
-                  name="preco"
-                  id="preco"
-                  class="itens-input"
-                />
-              </section>
-              <section class="container-fornecedor">
-                <input
-                  type="text"
-                  placeholder="Nome do Fornecedor"
-                  name="fornecedor"
-                  id="fornecedor"
-                  class="itens-input"
-                />
-              </section>
-              <button type="submit" class="formSubmit">Confirmar</button>
-            </section>
-          </form>
+          <section id="relatorio">
+            <div id="search">
+              <input type="text" id="filtro" placeholder="Pesquisar" />
+              <button href="" id="button-filtro">
+                <i class="material-icons" id="busca">search </i>
+              </button>
+            </div>
+
+            <table id="table">
+              <tbody>
+                <tr id="produto">
+                  <th id="titulo1" class="titulos">Produto</th>
+                  <td id="pdt1" class="dados">a</td>
+                  <td id="pdt2" class="dados">a</td>
+                </tr>
+                <tr id="quantidade">
+                  <th id="titulo2" class="titulos">
+                    Quantidade a ser comprada
+                  </th>
+                  <td id="qD1" class="dados">b</td>
+                  <td id="qD2" class="dados">b</td>
+                </tr>
+                <tr id="preco">
+                  <th id="titulo3" class="titulos">Preço unitário</th>
+                  <td id="pcD1" class="dados">c</td>
+                  <td id="pcD2" class="dados">c</td>
+                </tr>
+                <tr id="fornecedor">
+                  <th id="titulo4" class="titulos">Nome do Fornecedor</th>
+                  <td id="fD1" class="dados">d</td>
+                  <td id="fD2" class="dados">d</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </main>
       </section>
     </div>
     <script src="../../js/Principal/script.js"></script>
-    <script src="../../js/RegistroDeProdutos/script.js"></script>
   </body>
 </html>

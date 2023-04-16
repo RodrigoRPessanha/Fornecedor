@@ -1,0 +1,63 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#relatorio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 9fr;
+  grid-template-areas:
+    "search"
+    "tabela";
+  width: 56.25rem;
+  height: 31.25rem;
+}
+#search {
+  grid-area: search;
+  display: flex;
+  justify-self: center;
+}
+#filtro {
+  width: 25rem;
+  border-radius: 15px;
+  background-color: #909090;
+  border: black 3px solid;
+  color: black;
+}
+#filtro::placeholder {
+  padding-left: 0.625rem;
+  font-weight: bold;
+  color: black;
+  font-size: 1.25rem;
+}
+#busca {
+  color: white;
+  font-size: 2.5rem;
+}
+#button-filtro {
+  color: transparent;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+#table {
+  grid-area: tabela;
+  border: #643cd2 1px solid;
+}
+.titulos {
+  width: 50%;
+  background-color: #707070;
+  color: black;
+  text-align: center;
+}
+
+.dados {
+  background-color: #b5b5b5;
+  color: black;
+  text-align: center;
+  height: 3.125rem;
+}
