@@ -61,7 +61,7 @@ nav section#burguer-menu-div {
     "sidebar main";
   width: 100%;
   height: auto;
-  transition: grid-template-columns 0.3s ease;
+  transition: grid-template-columns 0.5s ease;
 }
 
 main {
