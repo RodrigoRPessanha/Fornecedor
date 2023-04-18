@@ -1,6 +1,6 @@
 const form = document.querySelector("#search");
 form.addEventListener("submit", (event) => {
-  event.preventDefault(); // cancela a submissão padrão do formulário
+  event.preventDefault();
 
   const filtro = document.querySelector("#filtro").value;
   const filtroEscapado = encodeURIComponent(filtro);
@@ -17,13 +17,6 @@ form.addEventListener("submit", (event) => {
       td3 = document.querySelector("#pcD1");
       td4 = document.querySelector("#fD1");
       resultado = resultados[0];
-      console.log(
-        "resultados:",
-        resultado["nomeProduto"],
-        resultado["qntdProdutos"],
-        resultado["preco"],
-        resultado["fornecedor"]
-      );
 
       td1.innerHTML = resultado["nomeProduto"];
       td2.innerHTML = resultado["qntdProdutos"];

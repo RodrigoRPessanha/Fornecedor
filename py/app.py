@@ -32,11 +32,7 @@ def registroDeProdutos():
 def relatorio():
     filtro = request.args.get('filtro')
     relatorio = selectRelatorioDeProdutos(filtro)
-    print(request.method, '//', request.args, '//',
-          request.form, '//', filtro, '//', request.args.get('filtro'))
-    print(relatorio)
     return jsonify(relatorio)
-    # return render_template('Relatorio/relatorio.html', relatorio=relatorio)
 
 
 if __name__ == '__main__':
