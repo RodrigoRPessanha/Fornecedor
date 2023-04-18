@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Incial</title>
+    <title>Relatório</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -85,7 +85,12 @@
         <main id="main">
           <section id="relatorio">
             <div id="search">
-              <input type="text" id="filtro" placeholder="Pesquisar" />
+              <input
+                type="text"
+                id="filtro"
+                placeholder="Pesquisar"
+                nome="filtro"
+              />
               <button href="" id="button-filtro">
                 <i class="material-icons" id="busca">search </i>
               </button>
@@ -121,6 +126,10 @@
         </main>
       </section>
     </div>
+    <div id="valor1" class="valores">{{ relatorio[0] }}</div>
+    <div id="valor2" class="valores">{{ relatorio[1] }}</div>
+    <div id="valor3" class="valores">{{ relatorio[2] }}</div>
+    <div id="valor4" class="valores">{{ relatorio[3] }}</div>
     <script src="../../js/Principal/script.js"></script>
   </body>
 </html>

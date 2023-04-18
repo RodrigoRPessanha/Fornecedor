@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Incial</title>
+    <title>Registrar Compras de Produtos</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -79,7 +79,11 @@
         </sidebar>
 
         <main id="main">
-          <form class="tipsForm" method="post">
+          <form
+            class="tipsForm"
+            method="post"
+            action="/registroDeComprasProdutos"
+          >
             <section class="container">
               <h2 class="h2-form">REGISTRAR COMPRAS DE PRODUTOS</h2>
               <section class="container-nomeProduto">
@@ -98,6 +102,7 @@
                   name="quantidadeDeProdutos"
                   id="quantidadeDeProdutos"
                   class="itens-input"
+                  min="0"
                 />
               </section>
               <section class="container-preco">
@@ -107,6 +112,7 @@
                   name="preco"
                   id="preco"
                   class="itens-input"
+                  min="0"
                 />
               </section>
               <section class="container-fornecedor">

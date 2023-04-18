@@ -61,3 +61,7 @@ main {
   text-align: center;
   height: 3.125rem;
 }
+
+.valores {
+  display: none;
+}
