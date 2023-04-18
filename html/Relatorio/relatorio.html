@@ -84,17 +84,21 @@
 
         <main id="main">
           <section id="relatorio">
-            <div id="search">
+            <form
+              id="search"
+              method="post"
+              action="http://localhost:5000/relatorio"
+            >
               <input
                 type="text"
                 id="filtro"
-                placeholder="Pesquisar"
-                nome="filtro"
+                placeholder="Pesquisar por Nome"
+                name="filtro"
               />
-              <button href="" id="button-filtro">
+              <button type="submit" id="button-filtro">
                 <i class="material-icons" id="busca">search </i>
               </button>
-            </div>
+            </form>
 
             <table id="table">
               <tbody>
