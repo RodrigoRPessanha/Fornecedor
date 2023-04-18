@@ -84,11 +84,7 @@
 
         <main id="main">
           <section id="relatorio">
-            <form
-              id="search"
-              method="post"
-              action="http://localhost:5000/relatorio"
-            >
+            <form id="search" method="get">
               <input
                 type="text"
                 id="filtro"
@@ -105,24 +101,20 @@
                 <tr id="produto">
                   <th id="titulo1" class="titulos">Produto</th>
                   <td id="pdt1" class="dados">a</td>
-                  <td id="pdt2" class="dados">a</td>
                 </tr>
                 <tr id="quantidade">
                   <th id="titulo2" class="titulos">
                     Quantidade a ser comprada
                   </th>
                   <td id="qD1" class="dados">b</td>
-                  <td id="qD2" class="dados">b</td>
                 </tr>
                 <tr id="preco">
                   <th id="titulo3" class="titulos">Preço unitário</th>
                   <td id="pcD1" class="dados">c</td>
-                  <td id="pcD2" class="dados">c</td>
                 </tr>
                 <tr id="fornecedor">
                   <th id="titulo4" class="titulos">Nome do Fornecedor</th>
                   <td id="fD1" class="dados">d</td>
-                  <td id="fD2" class="dados">d</td>
                 </tr>
               </tbody>
             </table>
@@ -134,6 +126,8 @@
     <div id="valor2" class="valores">{{ relatorio[1] }}</div>
     <div id="valor3" class="valores">{{ relatorio[2] }}</div>
     <div id="valor4" class="valores">{{ relatorio[3] }}</div>
+
     <script src="../../js/Principal/script.js"></script>
+    <script src="../../js/Relatorio/script.js"></script>
   </body>
 </html>

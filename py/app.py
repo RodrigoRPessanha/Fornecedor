@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS
 from database import *
 
 app = Flask(__name__)
+CORS(app)
 app.debug = True
 
 
@@ -26,11 +28,15 @@ def registroDeProdutos():
     return jsonify({'message': 'Registro realizado com sucesso.'}), 201
 
 
-@app.route('/relatorio', methods=['POST'])
+@app.route('/relatorio', methods=['GET'])
 def relatorio():
-    filtro = request.form.get('filtro')
+    filtro = request.args.get('filtro')
     relatorio = selectRelatorioDeProdutos(filtro)
-    return render_template('Relatorio/relatorio.html', relatorio=relatorio)
+    print(request.method, '//', request.args, '//',
+          request.form, '//', filtro, '//', request.args.get('filtro'))
+    print(relatorio)
+    return jsonify(relatorio)
+    # return render_template('Relatorio/relatorio.html', relatorio=relatorio)
 
 
 if __name__ == '__main__':
