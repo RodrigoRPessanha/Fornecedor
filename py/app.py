@@ -4,7 +4,6 @@ from database import *
 
 app = Flask(__name__)
 CORS(app)
-app.debug = True
 
 
 @app.route('/registroDeComprasProdutos', methods=['POST'])
